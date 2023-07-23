@@ -1,0 +1,126 @@
+/*this is global */
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*this is for the pages background */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cc2b5e, #753a88);
+    padding: 10px;
+}
+
+/*this is for the box the header and the input box and else is in */
+.todo_logo{
+    width: 100%;
+    max-width: 540px;
+    background: linear-gradient(135deg, #eecda3, #ef629f);
+    margin: 100px auto 20px;
+    padding: 40px 30px;
+    border-radius: 50px; /*this is to make the borders round */
+}
+
+/*this is for the text header */
+.todo_logo h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*this is for the small img/icon next to the header text */
+.todo_logo h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+/*this is for the input box */
+.enter_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/*this is making the input text on the input box*/
+input{
+    flex:1;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+/* this is making the button */
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #eecda3; 
+    color:#fff;
+    color:#753a88;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+/*this is for the unchecked text*/
+
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    position: relative;
+}
+/*this is for the unchecked sign before the item if checked */
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+/*this is for the checked item text */
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+/*this is for the checked sign after the item if checked */
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+
+/*this is for the cross sign to delete after entry */
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+/*this is for giving the del icon a hover affect */
+ul li span:hover{
+    background: #e1cbb0;
+}
+
+/*end*/

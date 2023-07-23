@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" integrity="sha384-xxxxx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo_logo">
+            <h2>To-Do List <img src="todo_icon.png"></h2>
+
+            <div class="enter_box">
+                <i class="fas fa-list" style="color: #071121;"></i>
+                <input type="text" id= "input_box" placeholder="Enter here">
+                <button onclick="additem()" class="fas fa-check"></button>
+            </div>
+            <ul id="order_list">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!--   end  -->
